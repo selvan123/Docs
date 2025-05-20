@@ -1,0 +1,25 @@
+Q: 61. Q Id: 1708899
+Q: 60. Q Id: 1708898 
+Q: 53. Q Id: 1708891 
+Q: 49. Q Id: 1708887 
+Q: 47. Q Id: 1708885 
+Q: 46. Q Id: 1708884 
+Q: 45. Q Id: 1708883 
+Q: 41. Q Id: 1708879
+Q: 34. Q Id: 1708872
+Q: 26. Q Id: 1708864 
+Q: 23. Q Id: 1708861 
+Q: 20. Q Id: 1708858 
+Q: 19. Q Id: 1708857 
+Q: 6. Q Id: 1708844 
+Q: 4. Q Id: 1708842 
+Q: 3. Q Id: 1708841 
+
+Q: 55. Q Id: 1708893 , current answer : Get-AzVM -Status, correct answer - Get-AzVM
+Q: 52. Q Id: 1708890, current answer : The nx module contains the schema for built-in resources for DSC and generates the CIM session. correct answer : The nx module contains the schema for built-in resources for DSC and must be installed on the local computer and imported into the configuration." 
+Q: 25. Q Id: 1708863, current answer : "Get-AzureRmVMSize", correct answer - "Update-AzureVM"
+
+ 
+
+
+
