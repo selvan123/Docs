@@ -1,0 +1,309 @@
+CURRICULAM VITAE
+SELVAN SELLAMUTHU
+
+Mobile No : 9886014262	E-Mail: s_selvan@yahoo.com	https://www.linkedin.com/in/selvan-sellamuthu-389400172/
+
+
+SUMMARY
+•	Around 21 years of diverse experience in the IT industry
+•	Over 8 years of strong hands-on experience in Architecting DevOps Solutions and Implementing them using a variety of open-source and licensed tools, including designing scalable and efficient workflows to streamline development, deployment, and operations processes
+•	Around 4 years of experience in Presales activities, including DevOps solutioning, effort estimation, customer presentations, participating in bid defense calls, etc., 
+•	Around 5 years of experience in Containerization/AKS/EKS/OpenShift
+•	Around 4 Years of experience in Microsoft Azure/AWS Solutions
+•	Around 10 Years of experience in Architecting and Developing Microsoft Applications - ASP.NET, C#, VB.NET, ADO.NET, SQL Server, SharePoint
+•	Good experience on Application Development (AD) and Application Maintenance (AM) portfolios
+•	Certified on 
+	FinOps Certified – Practitioner 
+	SAFe 4 DevOps Practitioner
+	Architecting Microsoft Azure Solutions from Microsoft
+	TS: Microsoft .NET Framework 3.5, Windows Communication Foundation Application Development
+	TS: Microsoft .NET Framework 3.5, ADO.NET Application Development
+	TS: Microsoft .NET Framework 2.0 - Web-based Client Development 
+	Designing and Implementing Databases with Microsoft SQL Server™ 2000 Enterprise Edition
+	Developing XML Web Services and Server Components with Microsoft Visual C#.NET and the Microsoft .NET Framework
+	Developing and Implementing Web Applications with Microsoft Visual C#™ .NET and Microsoft Visual Studio .NET
+	ITIL® V3 Foundation
+EXPERIENCE	
+•	Feb-2020 to working as a Senior Principal at LTIMindtree, Bangalore
+•	Apr-2005 to Feb-2020 worked as a Manager at Capgemini Consulting India Pvt. Ltd., Bangalore
+•	June-2004 to Apr-2005 worked as a System Analyst at Hutchison Max Telecom Limited, Mumbai
+TECHNICAL PROFICENCY
+Cloud 	Azure	OWIN, VM, Azure SQL, Blob, Runbook, Webhooks, O365 Integration with Azure, ARM templates, Azure Data Factory, Azure analysis services, VNET, Security Groups and VPN
+	AWS	CloudFormation script, Lambda, CodeDeploy, EC2, RDS, Security Groups, VPC, VPN and S3
+Development	Web Technology	C#.NET, ASP.NET, VB.NET, ADO.NET, WCF, Java, SharePoint
+DevOps	SCM	VSS, TFVS, SVN, GitHub
+	Agile Planning & Tracking Tools	JIRA, ADO Boards
+	CI/CD Tools	Azure DevOps Services (VSTS), Jenkins, GitLab CI/CD, BitBucket CI/CD, GitHub Actions, Bitrise
+	Scripting	PowerShell, Python, Unix Shell
+	Static Code Analysis/SAST/DAST/IAST/Container Security/Testing Tools 	SonarQube, Veracode, Checkmarx, Nexus IQ, OWASP ZAP, Microfocus Fortify, HCL AppScan, Selenium, JMeter, Playwright, Postman, Newman, etc., 
+	Containerization/Orchestration Tools	Docker, AKS, EKS, OpenShift
+	Artifactory Package Tools	Nexus, JFrog, Azure Artifacts
+	IaC/Configuration Management Tools	Terraform, ARM, CloudFormation, Ansible 
+	Change Management Tools	ServiceNow, Remedy
+	Monitoring & Logging Tools	Elastic Logstash Kibana (ELK), Splunk, Dynatrace, Prometheus, Grafana, etc., 
+ACADAMIC QUALIFICATION
+
+MCA(Master Of Computer Applications)	Shanmugha College of Engineering (Bharathidasan University), Thanjavur, Tamilnadu
+B.Sc.(Computer Science)	Sri Vasavi College (Bharathiyar University), Erode, Tamilnadu
+
+MAJOR ASSIGNMENTS
+
+Client	The Hartford Insurance
+Team	12
+Role	DevOps Architect
+Technology	Operating System	Windows, Linux
+	DevOps Tools	Azure Boards, Azure DevOps, GitHub Actions, Docker, Checkmarx, Sonarqube, Gitleaks, Nexus IQ
+	Cloud Services	AWS
+	DevOps Pipeline	Pipelines designed and implemented for .NET Core, Java, Python, NodeJs, Angular and UiPath
+Duration	24 months
+Project Description
+•	Enhancing DevOps efficiency by implementing CI/CD pipelines for over 70 applications, streamlining build and deployment processes while integrating code and security scans, release gates, and other automation measures
+•	Implementation of Blue/Green Solution using Azure DevOps pipeline
+•	Implementation of Zero touch deployment solution using Azure DevOps and ServiceNow
+•	Migration from Azure DevOps to GitHub Enterprise Server (Repo + Pipelines)
+•	Optimizing AWS infrastructure costs through FinOps strategy
+•	Designed and configured monitoring solutions and dashboards using Splunk and Dynatrace
+
+Project Title	Global Dealer System (GDS) – Application Modernization 
+Client	Volvo
+Team	3
+Role	DevOps Architect
+Technology	Operating System	Windows, Linux
+	DevOps Tools	JIRA, Gerrit, Jenkins, SonarQube, OpenShift, Prometheus, Grafana, Selenium, JMeter, Jeager, Redis, KONG API
+	DevOps Pipeline	Designed and implemented pipelines for backend and frontend applications following a microservices architecture
+Duration	8 months
+Responsibilities 
+•	Modernizing GDS application using Microservice based architecture 
+•	Work with different stakeholders to implement Jenkins CICD pipeline to build & deployments of Microservices into OpenShift environment with necessary quality and approval gates 
+•	Creation of Docker and OpenShift deployment files 
+•	Install & configuration of Redis, KONG API, Jeager, Prometheus and Grafana through Jenkins Pipeline 
+•	OpenShift migration from v3.11 to V4.8 
+
+Project Title	Azure Cloud Migration using “Enlightened Lift & Shift” Approach 
+Client	TomTom
+Team	5
+Role	DevOps Architect
+Technology	Operating System	Windows, Linux
+	DevOps Tools	JIRA, Azure Git, Azure DevOps, Docker, SonarQube, Terraform, Ansible, Selenium, JMeter, Prometheus, Grafana, Scalyr, PagerDuty
+	Cloud Services	Azure
+	DevOps Pipeline	Migrated existing pipelines from Jenkins to Azure DevOps 
+Duration	8 months
+Project Description
+The primary goal of the Project is 
+•	Migration of 55 large and complex applications from OpenStack/Data Center servers to Azure using “Enlightened Lift & Shift” approach, an Azure DevOps based approach for Infra provisioning and CICD
+•	Migration contains 550+ virtual servers and 50+ databases (MySQL, Oracle, MSSQL)
+
+Project Title	DevOps Assessment, Solutioning & Implementations
+Client	Realogy 
+Team	12
+Role	DevOps Architect
+Technology	Operating System	Windows Server 2016/2019, Linux
+	DevOps Tools	Azure Git, Azure DevOps, Jenkins, BitBucket CICD, GitLab CICD, Docker, Bitrise, SonarCloud, Veracode, Terraform, Selenium, JMeter, Datadog
+	Cloud Services	AWS, Azure
+	DevOps Pipeline	Pipelines designed and implemented for .NET Core, Java, Python, NodeJs, Angular, PHP and Mobile (Android, iOS) applications
+Duration	30 months
+Project Description
+The primary goal of the Project is 
+•	Assess DevOps maturity using LTIMintree framework for various BUs of Realogy
+•	Identify Gaps and propose DevOps roadmap to improve the maturity
+•	Propose DevOps Architecture for greedfield projects and Implementations 
+•	Train account team members on DevOps culture and tools
+
+Project Title	DevOps CoE
+Client	Reputed Clients from North America
+Team	20
+Role	DevOps Architect
+Technology	Operating System	Windows Server 2012/2016, Linux
+	DevOps Tools	Git, Azure DevOps Services (VSTS), Jenkins, SonarQube, OWASP ZAP, Nexus, Unit test framework, ARM Template, Cloud Formation Template, Veracode, Selenium, JMeter, Liquibase, Python, Groovy Scripts, etc.,
+	Cloud Services	AWS, Azure
+	DevOps Pipeline	Custom applications - .NET, Java, etc
+Mobile applications – Android, iOS, Surface
+Big Data – Talend, Azure Data warehouse, Azure SQL
+Duration	24 months
+Project Description
+The primary goal of the Project is 
+•	Assess the applications from accounts and provide the DevOps implementation proposal
+•	Implementing DevOps solution 
+•	Innovation, introduction and improvement of DevOps accelerators 
+•	Train account team members to adopt Agile & DevOps culture and tools
+
+Project Title	INFIN Re-platform to Azure
+Client	Warner Bros.
+Domain	Media & Entertainment
+Team	8
+Role	Technical Architect & Program Manager
+Technology	Operating System	Windows Server 2012 (Azure VM)
+	DevOps Tools	VSTS, SonarQube, OWASP ZAP, ARM Template
+	Azure Services	Azure SQL, VM, Monitoring, Office365 Outlook Integration 
+	Web Tools	ASP.NET, AJAX, JQuery, LINQ, Crystal Reports
+	Code base	C# 
+	Source Control	Visual Studio Team Services
+	Authentication Framework	OWIN/Katana Framework
+	Database	SQL Server 2012
+	IDE	Visual Studio 2013
+Duration	9 months
+Project Description
+The primary objective of this Project is to re-platform INFIN suite of applications (i.e., INFIN, IPS and MTS) from Current legacy Visual Basic environment into more modern latest version of .NET framework-based web application and host it in Azure (Microsoft public cloud).
+
+Main Features - 
+•	All INFIN Suite of applications (INFIN, IPS and MTS) rewritten/upgrade to .NET Framework 4.6.2 based Web Application
+•	Source Code is integrated with Visual Studio Team Services
+•	VSTS is used as Orchestration tool for Application build & Deployment
+•	Azure VM and Azure SQL environments created using ARM template (Infrastructure as code) from DevOps pipeline
+•	Single Sign-On is implemented using OWIN/Katana Framework
+•	Application Mail functionality is implemented using Office365 SMTP Server
+
+Project Title	Resource Hub to Azure Migration
+Client	Warner Bros.
+Domain	Media & Entertainment
+Team	4
+Role	Technical Architect & Program Manager
+Technology	Operating System	Windows Server 2012
+	DevOps Tools	VSTS, SonarQube, OWASP ZAP, ARM Template
+	Azure Services	Azure SQL, VM, Monitoring, Office365 Outlook Integration 
+	Web Tools	ASP.NET, AJAX, JQuery, LINQ, Crystal Reports
+	Code base	C# 
+	Source Control	Visual Studio Team Services
+	Authentication Framework	OWIN/Katana Framework
+	Database	SQL Server 2012
+	IDE	Visual Studio 2013
+Duration	6 months
+Project Description
+Resource Hub (RH) is an Intranet application to assist in the acquisition, on boarding, management, payments for services and off boarding of external resources.
+
+This application was tightly integrated with Clarity application. As part of this project, Clarity application is replaced by “Project Online” application and necessary changes have been done in RH application and deployed to Azure cloud.
+
+Main Features - 
+•	Source Code is integrated with Visual Studio Team Services.
+•	VSTS is used as Orchestration tool for Application Building & Deployment
+•	Azure VM and Azure SQL environments created using ARM template (Infrastructure as code) from DevOps pipeline
+•	Single Sign-On is implemented using OWIN/Katana Framework.
+•	Application Mail functionality is implemented using Office365 SMTP Server.
+
+Project Title	ARP (Archiving Reporting Portal)
+Client	Warner Bros.
+Domain	Media & Entertainment
+Team	4 – 8
+Role	Technical Lead & Program Manager
+Technology	Web Tools	ASP.NET, SharePoint, Business Object Reports
+	Azure Services	Web hook, Runbook, Azure SQL, SharePoint Online
+	Code base	C#, Custom Web Parts
+	Database	SQL Server 2008/2012
+	IDE	Visual Studio 2010
+Project Description
+Over the years, WBEI systems have been replaced by alternate systems for various reasons including: upgrading to newer, modern architectures, as well as consolidating systems from acquisitions (e.g. New Line Cinema).  However, while the majority of the functionality of these systems was replaced on a go-forward basis, in many cases some functionality as well as historical data was not entirely migrated into the new system.  In these cases, the legacy systems continue to be maintained as the “system of record” for historical data to support any reporting (e.g. statutory or legal) that require this data.  In addition, some systems continue to play a part in the current system landscape and may be accumulating additional data.
+The WBEI Archive Reporting Portal (ARP) is an initiative to create a custom archival reporting system for WBEI, storing imaged report documents (such as reports in PDF format and MS Office documents) and a Data Mart to allow for ingestion of data from WBEI legacy systems.
+
+The goals of the overall project are:
+•	To provide cost effective, self-service access to historical structured and unstructured (e.g. PDF or images) data currently maintained in aging legacy systems of record
+•	To reduce support costs by migrating this data to a new, centralized, reporting system while:
+1.	Complying with record retention policies
+2.	Supporting legal, statutory and participations research requirements
+
+	This is multimillion project and close to 20 (JGL, BGL, ORFIN, JTF, ITS, HP 3000, JPA, DMT, DOF, IFP, IPG, etc.,) applications were migrated to ARP solution as part of this project in various phases
+
+
+Project Title	THOR 64-bit Upgrade
+Client	Warner Bros.
+Domain	Media & Entertainment
+Team	6
+Role	Technical Lead
+Technology	Web Tools	ASP.NET, AJAX, JQuery, LINQ
+	Code base	C# & VB.NET
+	Database	Oracle 10g, PL/SQL
+	IDE	Visual Studio 2013
+Project Description
+The purpose of this project is to rewrite/upgrade of the code-base to 64-bit from legacy technology for the following THOR applications.  
+•	WBPI Passport
+•	CORRS Redbook & CORRS Shopping Cart
+•	FTPIX 
+•	International Directory
+•	ITAP 
+•	MIDAS
+
+Project Title	ITAP – iCampaign Interface
+Client	Warner Bros.
+Domain	Media & Entertainment
+Team	5
+Role	Technical Lead
+Technology	Web Tools	ASP.NET 
+	Code base	C#, WCF
+	Database	SQL Server 2008
+	IDE	Visual Studio 2013
+Project Description
+The purpose of the iCampaign - ITAP Integration project is to implement an interface that on demand transfers a territory’s Pre plan and Detail Plan entered in iCampaign to ITAP real time. iCampaign will store the versions and revisions for the Pre Plan and Detail Plan to maintain consistency of information across the two systems and for audit purposes.
+
+Project Title	MSA Dashboard
+Client	TXU
+Domain	Utility 
+Team	5
+Role	Developer
+Technology	Web Tools	MOSS 2007 
+	Code base	C#  
+	Database	SQL Server 2005
+	IDE	Visual Studio 2005 & SharePoint Designer
+Project Description
+This application is used to track and document the required information as noted in the Master Service Agreement.   It will allow Oncor and Infrastrux to work productively to maximize the success of the agreement between the two companies.    
+
+Project Title	Rate Compendium
+Client	TXU 
+Domain	Retail – Energy
+Team	3
+Role	Configuration Management, Client interaction, Development, Code review, Technical Documentation and Deployment.
+Technology	C# 2.0, ASP.Net 2.0, SQL Server 2000
+Duration	3 months
+Project Description
+The purpose of this project is to create a web enabled rate plan tool. This project will allow the rate administration, rate calculations, and email notification pertaining to rate information. 
+
+Project Title	TXUOnline (Net Connect Client)
+Client	TXU 
+Domain	Retail – Energy
+Team	4
+Role	Configuration Management, Client interaction, Estimation, Development, Code review, Technical Documentation and Deployment.
+Technology	C#, ASP.Net, Web Service, SQL Server 2000
+Duration	4 months
+Project Description
+The application is to add new functionality in the online enrollments system, which allows the customer to view the required deposit information prior to accepting/denying the enrollment. The Web Service (Net Connect Client) that exposes methods to return the credit score details of the customer from Experian.
+Net Connect is a business-to-business application gateway designed to allow access to Experian legacy systems via the public Internet. It is a secure 128-bit encrypted transaction, using HTTPS. It utilizes XML for the input inquiry and has the capability of returning field-level XML.
+
+
+Project Title	TEEM
+Client	TXU 
+Domain	Electric Delivery
+Team	4
+Role	Configuration Management, Client interaction, Estimation, Development, Code review, Technical Documentation and Deployment.
+Technology	C#, ASP.NET, ASP, SQL Server 2000
+Duration	20 months
+Project Description
+The TEEM project is consists of set of web based applications, Residential and Small Commercial Program (RSC), Low-Income Weatherization Program (HTR) , Small Commercial Air Conditioning Program (CAC), Commercial and Industrial Program (C&I) and Emergency Load Management Program (ELM). We used to get the changes in the form of change requests (CR) for all these applications.
+
+
+Project Title	TMS KIOSK
+Client	All Hutch Telecom Circles
+Domain	Telecom
+Team	2
+Role	Development and Deployment.
+Technology	C# (Windows Application), Oracle
+Duration	5 months
+Project Description
+TMS KIOSK Application is used to self-operated reception like operations without indulging any extra manpower at the shops. It interacts with the built-in TMS feature of CRM to make the data readily available in CRM. To make the TMS KIOSK more users friendly and easy to operate, multi-language feature is added to it, which means it will be available in English/Hindi and the regional language of the respective circle, Providing a visiting customer with a physical token is also made possible in TMS KIOSK. It provides an ATM like slip once the token is issued or reactivated by the customer to himself.
+	
+Project Title	BSCS Vision
+Client	All Hutch Telecom Circles
+Domain	Telecom
+Team	2
+Role	Development and Deployment.
+Technology	C#, ASP.NET, Oracle
+Duration	4 months
+Project Description
+BSCS Vision Application is used to display the General Details, Closed User Group, Amount Due, Services, Count of Cell Numbers, Tariff History, Unbilled Amount, Debtor Ledger Report and Prepaid Profile for particular customer. This application is invoking from CRM Application with appropriate parameters
+
+PERSONAL INFORMATION
+	Date of Birth		:	21-06-1978
+	Gender			:	Male
+Marital Status 		:	Married
+Nationality		: 	Indian
+Current Address		:	304, 3rd Floor,
+			Mahadevapura,
+			Bangalore – 560 048
+Karnataka
