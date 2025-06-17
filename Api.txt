@@ -1,0 +1,73 @@
+Architecture Documentation: GitHub to ADO via IBM API Connect
+Generated on 2025-06-17 16:21:30
+Overview
+This architecture allows organizations to trigger Azure DevOps (ADO) pipelines when a GitHub repository receives a commit or pull request event. The process is securely mediated by IBM API Connect (APIC), which serves as a policy-based API gateway or proxy to forward relevant GitHub webhook events to ADO.
+Components
+• GitHub: Source code repository. Generates events like commits and pull requests.
+• GitHub Webhook: Sends JSON payload to a preconfigured APIC endpoint on every repo change.
+• IBM API Connect (APIC): Acts as a secure intermediary to receive GitHub webhooks and trigger ADO.
+• ADO Orchestrator Pipeline: Receives payload and routes execution to the correct pipeline.
+• ADO Target Pipeline: Pipeline that checks out the GitHub code and performs build/test/deploy.
+• GitHub Repository (Source Code): Pulled into ADO pipeline during execution via Service Connection or PAT.
+Workflow
+1. Event in GitHub: A commit or pull request is made in a GitHub repository. A webhook is triggered to send a POST request to APIC.
+2. API Proxy (IBM API Connect): Receives the webhook payload, validates it, extracts key details, and routes the request to Azure DevOps using the ADO REST API.
+3. ADO Orchestrator Pipeline Triggered: APIC triggers a central ADO orchestrator pipeline using the REST API.
+4. ADO Target Pipeline Execution: The orchestrator passes parameters to the appropriate downstream ADO pipeline.
+5. GitHub Code Checkout: The source code is checked out from GitHub using Service Connection or PAT.
+Authentication and Security
+Integration Point | Auth Method | Notes
+GitHub → APIC | Webhook Secret (HMAC) | Ensure request is from trusted source.
+APIC → ADO REST API | ADO PAT (Base64 encoded in header) | Secure token with limited scope.
+ADO Pipeline → GitHub | Service Connection or GitHub PAT | Required to pull source code securely.
+Payload Example (from GitHub Webhook)
+{
+  "repository": {
+    "name": "sample-repo",
+    "full_name": "yourorg/sample-repo"
+  },
+  "ref": "refs/heads/main",
+  "pusher": {
+    "name": "selvan"
+  },
+  "commits": [...]
+}
+API Request to ADO from APIC
+{
+  "resources": {
+    "repositories": {
+      "self": {
+        "refName": "refs/heads/main"
+      }
+    }
+  },
+  "templateParameters": {
+    "repoName": "yourorg/sample-repo",
+    "branch": "main"
+  }
+}
+Pipeline Configuration: GitHub Checkout
+Option 1: Classic Pipeline
+Use 'Get Sources' tab with a GitHub Service Connection and dynamic branch name.
+Option 2: YAML Pipeline
+
+parameters:
+  - name: repoName
+    type: string
+  - name: branch
+    type: string
+
+steps:
+- script: |
+    git clone --branch ${{ parameters.branch }} https://x-access-token:$(GH_PAT)@github.com/${{ parameters.repoName }} app
+    cd app && ./build.sh
+  env:
+    GH_PAT: $(GH_PAT)
+
+Advantages of this Architecture
+• 🔐 Secure Separation: GitHub does not talk to ADO directly—API gateway protects flow.
+• 🔄 Centralized Control (APIC): Can apply rate limits, transform payloads, log requests.
+• 🔧 Flexible Routing: Dynamically map different GitHub events to specific ADO pipelines.
+• ♻️ Reusable: Works for multiple repos, branches, and use cases.
+Summary
+This solution provides a modular and secure way to trigger Azure DevOps pipelines from GitHub activity using IBM API Connect. It is suitable for enterprises that need centralized control, visibility, and security over CI/CD orchestration across multiple GitHub repositories.
