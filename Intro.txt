@@ -1,0 +1,21 @@
+hh
+Hi, I’m Selvan. I bring over 21 years of experience in the IT industry with a strong foundation in the Microsoft ecosystem. I started my career as a .NET developer and later transitioned into cloud by leading application modernization and migration projects to Microsoft Azure.
+
+My DevOps journey began with Visual Studio Team Services (now Azure DevOps), where I got hands-on with setting up end-to-end CI/CD pipelines. Over time, I specialized in DevOps transformation initiatives—conducting DevOps maturity assessments, identifying process and tooling gaps, and defining actionable roadmaps for continuous improvement.
+
+My core focus areas include implementing enterprise-scale branching and merging strategies, onboarding DevOps toolchains, integrating static and dynamic application security testing (SAST/DAST), container security, Infrastructure as Code (IaC) using tools like Bicep, ARM, and Terraform, as well as monitoring and observability with tools like Azure Monitor and Splunk.
+
+I’ve also implemented DevSecOps best practices, containerization using Docker and Kubernetes, and integrated quality gates and shift-left security into CI/CD workflows. I track and drive improvements using DORA metrics like deployment frequency, lead time for change, change failure rate, and MTTR.
+
+In recent engagements, I’ve supported several GitHub migration projects. In my latest assignment, I successfully led the migration of over 350+ repositories from Azure DevOps to GitHub, ensuring secure, scalable, and automated workflows with GitHub Actions, GitHub Advanced Security, and inner-source adoption."
+
+Let me know if you’d like to condense this into a 30-second version or format it into a formal profile bio.
+
+
+
+
+
+
+
+
+
