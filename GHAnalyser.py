@@ -200,9 +200,14 @@ class OllamaAgent:
     def _create_analysis_prompt(self, metadata: RepoMetadata) -> str:
         """Create comprehensive analysis prompt for Ollama"""
         
-        # Calculate some metrics
-        days_since_creation = (datetime.now() - datetime.fromisoformat(metadata.created_at.replace('Z', '+00:00'))).days
-        days_since_update = (datetime.now() - datetime.fromisoformat(metadata.updated_at.replace('Z', '+00:00'))).days
+        # Calculate some metrics with timezone handling
+        from datetime import timezone
+        now = datetime.now(timezone.utc)
+        created_dt = datetime.fromisoformat(metadata.created_at.replace('Z', '+00:00'))
+        updated_dt = datetime.fromisoformat(metadata.updated_at.replace('Z', '+00:00'))
+        
+        days_since_creation = (now - created_dt).days
+        days_since_update = (now - updated_dt).days
         
         # Build language distribution
         total_bytes = sum(metadata.languages.values())
@@ -361,54 +366,60 @@ def main():
     
     try:
         for i, repo_name in enumerate(repositories, 1):
-            # Parse repository
             try:
-                owner, repo = repo_name.split('/')
-            except ValueError:
-                print(f"❌ Invalid repository format: {repo_name} (should be 'owner/repo')")
+                # Parse repository
+                try:
+                    owner, repo = repo_name.split('/')
+                except ValueError:
+                    print(f"❌ Invalid repository format: {repo_name} (should be 'owner/repo')")
+                    continue
+                
+                print("\n" + "=" * 80)
+                if len(repositories) > 1:
+                    print(f"📊 Analysis {i}/{len(repositories)}: {repo_name}")
+                else:
+                    print(f"📊 GitHub Repository Analysis: {repo_name}")
+                print("=" * 80)
+                
+                # Fetch repository data
+                metadata = analyzer.fetch_repo_data(owner, repo)
+                
+                if not metadata.name:  # Check if data was fetched successfully
+                    print(f"❌ Failed to fetch data for {repo_name}")
+                    continue
+                
+                # Get AI analysis
+                print("\n" + "=" * 60)
+                print("🤖 AI Analysis and Recommendations")
+                print("=" * 60)
+                
+                analysis = agent.analyze_repository(metadata)
+                print(analysis)
+                
+                # Save results
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                filename = f"analysis_{owner}_{repo}_{timestamp}.md"
+                
+                with open(filename, 'w', encoding='utf-8') as f:
+                    f.write(f"# GitHub Repository Analysis: {repo_name}\n\n")
+                    f.write(f"**Analysis Date:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+                    f.write("## Repository Overview\n\n")
+                    f.write(f"- **Name:** {metadata.name}\n")
+                    f.write(f"- **Description:** {metadata.description}\n")
+                    f.write(f"- **Language:** {metadata.language}\n")
+                    f.write(f"- **Stars:** {metadata.stars:,}\n")
+                    f.write(f"- **Forks:** {metadata.forks:,}\n")
+                    f.write(f"- **Open Issues:** {metadata.open_issues}\n")
+                    f.write(f"- **License:** {metadata.license or 'None specified'}\n\n")
+                    f.write("## AI Analysis and Recommendations\n\n")
+                    f.write(analysis)
+                
+                print(f"\n💾 Analysis saved to: {filename}")
+                
+            except Exception as e:
+                print(f"❌ Error analyzing {repo_name}: {e}")
+                print("🔄 Continuing with next repository...")
                 continue
-            
-            print("\n" + "=" * 80)
-            if len(repositories) > 1:
-                print(f"📊 Analysis {i}/{len(repositories)}: {repo_name}")
-            else:
-                print(f"📊 GitHub Repository Analysis: {repo_name}")
-            print("=" * 80)
-            
-            # Fetch repository data
-            metadata = analyzer.fetch_repo_data(owner, repo)
-            
-            if not metadata.name:  # Check if data was fetched successfully
-                print(f"❌ Failed to fetch data for {repo_name}")
-                continue
-            
-            # Get AI analysis
-            print("\n" + "=" * 60)
-            print("🤖 AI Analysis and Recommendations")
-            print("=" * 60)
-            
-            analysis = agent.analyze_repository(metadata)
-            print(analysis)
-            
-            # Save results
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            filename = f"analysis_{owner}_{repo}_{timestamp}.md"
-            
-            with open(filename, 'w', encoding='utf-8') as f:
-                f.write(f"# GitHub Repository Analysis: {repo_name}\n\n")
-                f.write(f"**Analysis Date:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
-                f.write("## Repository Overview\n\n")
-                f.write(f"- **Name:** {metadata.name}\n")
-                f.write(f"- **Description:** {metadata.description}\n")
-                f.write(f"- **Language:** {metadata.language}\n")
-                f.write(f"- **Stars:** {metadata.stars:,}\n")
-                f.write(f"- **Forks:** {metadata.forks:,}\n")
-                f.write(f"- **Open Issues:** {metadata.open_issues}\n")
-                f.write(f"- **License:** {metadata.license or 'None specified'}\n\n")
-                f.write("## AI Analysis and Recommendations\n\n")
-                f.write(analysis)
-            
-            print(f"\n💾 Analysis saved to: {filename}")
             
             # Add delay between analyses in batch mode to respect API limits
             if len(repositories) > 1 and i < len(repositories):
@@ -421,9 +432,6 @@ def main():
             
     except KeyboardInterrupt:
         print("\n❌ Analysis interrupted by user")
-        sys.exit(1)
-    except Exception as e:
-        print(f"❌ Error during analysis: {e}")
         sys.exit(1)
 
 
